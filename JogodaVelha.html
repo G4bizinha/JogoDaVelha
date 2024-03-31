@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JOGO DA VÉIA</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/128/518/518215.png">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" href="Velha.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body class="body">
+  <div class="modal" id="myModal">
+    <div class="modal-content">
+      <h3 class="fredoka">Qual você escolhe?</h3>
+      <div class="center">
+        <button class="xis">❌</button>
+         ou 
+        <button class="bolinha">⭕</button>?
+      </div>
+    </div>
+  </div>
+    <div class="modal-1" id="ModalVenceu" style="display: none;">
+      <div class="modal-content">
+          <h3 class="fredoka">Você ganhou!YEAH😆!</h3>
+        <div class="center">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiI3qEHYegI2Tx9iHRXoXukg_BY5mYpVpaOa8BFBYRc47_dUYZOmXP6a6OxpkKgS2Bosy5T_J9b-oneqiIPm1wNHUis8LszE2v-3sWFioOZtZeKDhjF2MoYzhE8tIp-zrRx0QJNsI1E8Tc/s1600/girl-anime-happy.gif" width="180">
+        </div>
+      </div>
+    </div>
+      <div class="modal-1" id="ModalPerdeu" style="display: none;">
+        <div class="modal-content">
+            <h3 class="fredoka">Você perdeu!Que pena😢!</h3>
+          <div class="center">
+            <img src="https://gifdb.com/images/high/anime-sad-crying-tears-gq1cd7ooettkytan.gif" width="180">
+          </div>
+        </div>
+      </div>
+        <div class="modal" id="ModalEmpate" style="display: none;">
+          <div class="modal-content">
+              <h3 class="fredoka">Deu empate!Legal😀!</h3>
+            <div class="center">
+              <img src="https://giffiles.alphacoders.com/142/142758.gif" width="180">
+            </div>
+          </div>
+        </div>
+        <h1 class="title pixelify-sans">Jogo da Velha</h1>
+        <table class="board">
+          <tr>
+            <td>
+              <button class="cell cell--1" id="x0-0" onclick="clique(0, 0)"></button>
+            </td>
+            <td>
+              <button class="cell cell--2" id="x0-1" onclick="clique(0, 1)"></button>
+            </td>
+            <td>
+              <button class="cell cell--3" id="x0-2" onclick="clique(0, 2)"></button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="cell cell--4" id="x1-0" onclick="clique(1, 0)"></button>
+            </td>
+            <td>
+              <button class="cell cell--5" id="x1-1" onclick="clique(1, 1)"></button>
+            </td>
+            <td>
+              <button class="cell cell--6" id="x1-2" onclick="clique(1, 2)"></button>
+          </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="cell cell--7" id="x2-0" onclick="clique(2, 0)"></button>
+            </td>
+            <td>
+              <button class="cell cell--8" id="x2-1" onclick="clique(2, 1)"></button>
+            </td>
+            <td>
+              <button class="cell cell--9" id="x2-2" onclick="clique(2, 2)"></button>
+            </td>
+          </tr>
+        </table>
+          <div class="bar">
+          <button class="newgame pixelify-sans" type="reset" onclick="resetBoard()">Recomeçar</button>
+        </div>
+        <h4>Feito com Muito 💗 & ☕ Por <a href="https://www.linkedin.com/in/gabriela-von-borowski-ben/">Gabriela Von.</a></h4>
+        
+</body>
+</html>
+
+
